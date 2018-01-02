@@ -85,6 +85,18 @@
   </ul>
 </div>
 
+       </div>
+       <div class="contact-form wrapper-small">
+         <h2 class="about-title">contact form</h2>
+          <form id="contactform" method="POST">
+              <input type="text" name="name" placeholder="Your name">
+              <input type="email" name="_replyto" placeholder="Your email">
+              <input type="hidden" name="_subject" value="Website contact" />
+              <input type="text" name="telegram" placeholder="Your Telegram username">
+              <input type="text" name="hangouts" placeholder="Your Hangouts username">
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="submit" value="Submit Request">
+          </form>
         </div>
     </div>
 
@@ -95,6 +107,8 @@
           families: ['Taviraj:500', 'Work+Sans:500,700']
         }
       });
+      var contactform =  document.getElementById('contactform');
+      contactform.setAttribute('action', '//formspree.io/' + 'techexhibeo' + '@' + 'gmail' + '.' + 'com');
     </script>
     
   </body>
